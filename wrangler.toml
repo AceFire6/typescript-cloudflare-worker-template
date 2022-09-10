@@ -1,0 +1,21 @@
+name = "project-name"
+main = "src/index.ts"
+compatibility_date = "2022-07-30"
+
+account_id = "<Cloudflare Account ID here>"
+node_compat = true
+
+# These are the default environment variables provided to the worker
+#[vars]
+#ENV = "DEBUG"
+
+# The necessary secrets are:
+# // Add secrets here
+# Run `echo <VALUE> | wrangler secret put <NAME>` for each of these
+
+[env.production]
+name = "project-name-production"
+
+# These are the production environment variables provided to the worker
+#[env.production.vars]
+#ENV = "PRODUCTION"

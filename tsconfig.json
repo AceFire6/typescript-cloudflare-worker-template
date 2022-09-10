@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["./src/*"],
+      "__tests__/*": ["./__tests__/*"]
+    },
+    "declaration": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "isolatedModules": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "noEmitOnError": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "importsNotUsedAsValues": "error",
+    "exactOptionalPropertyTypes": true,
+    "moduleResolution": "node",
+    "outDir": "tscOutDir",
+    "preserveConstEnums": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "types": ["@cloudflare/workers-types", "jest"]
+  },
+  "include": ["src", "__tests__"],
+  "exclude": ["node_modules", "dist"]
+}
